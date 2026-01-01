@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe System Cleaner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1 class="glitch">AVARIA_CLEANUP</h1>
+            <p id="system-info">Bağlantı Bekleniyor...</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="circle-wrap">
+                <div class="circle" id="status-circle">
+                    <span id="data-display">0.000</span>
+                    <span class="unit">GB</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="log-panel">
+            <div id="log-area">> Sistem hazır. Başlat'a bas.</div>
+        </div>
+
+        <div class="controls">
+            <button id="scan-btn" onclick="taramayiBaslat()">TARAMAYI BAŞLAT</button>
+            <button id="clean-btn" onclick="temizligiBaslat()" disabled>TEMİZLE & YOK ET</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
